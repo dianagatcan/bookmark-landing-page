@@ -14,6 +14,8 @@ body {
     text-align: center; */
   }
 
+/*--------Header------------*/
+
   header{
     display: flex;
     justify-content: flex-end;
@@ -50,10 +52,102 @@ body {
   }
   
   .login{
-    padding: 1rem 2.5rem;
+    padding: 0.8rem 2.5rem;
     background-color: hsl(0, 94%, 66%);
-    border: none;
-    border-radius: 0.5rem;
+    border: 2px solid hsl(0, 100%, 100%);
+    border-radius: 0.3rem;
     cursor: pointer;
     color: hsl(0, 100%, 100%);
+    margin-left: 1.5rem;
   }
+
+  .login:hover{
+    background-color: hsl(0, 100%, 100%);
+    color: hsl(0, 94%, 66%);
+    border: 2px solid hsl(0, 94%, 66%);
+  }
+
+  /*--------Hero Section------------*/
+  .hero-section{
+    display: flex;
+    padding: 3rem 0 3rem 10%;
+  }
+
+  .hero-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    padding-right: 10%;
+  }
+
+  .hero-content h1{
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  .hero-section img{
+    width: 50%;
+  }
+
+  .hero-content p{
+    color: hsl(229, 8%, 60%);
+    line-height: 1.6;
+  }
+
+  .hero-button{
+    display:flex;
+    justify-content: flex-start;
+  }
+
+  .hero-button button{
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
+    border: none;
+  }
+
+  .button-chrome{
+    margin-right: 1rem;
+    color:hsl(0, 100%, 100%);
+    background-color: hsl(231, 69%, 60%);
+  }
+
+  .button-firefox{
+    color: hsl(229, 8%, 60%);
+  }
+
+  .button-chrome:hover{
+    color: hsl(231, 69%, 60%);
+    border: 2px solid hsl(231, 69%, 60%);
+  }
+
+  .button-firefox:hover{
+    color: hsl(229, 31%, 21%);
+    border: 2px solid hsl(229, 31%, 21%);
+}
+
+.button-chrome:hover, .button-firefox:hover{
+    background-color: hsl(0, 100%, 100%);
+    transition: all 0.3s ease 0s;
+}
+
+.hero-image{
+    width: 100%;
+}
+
+.hero-shape{
+    content: "";
+    position: absolute;
+    right: -10rem;
+    bottom: 6rem;
+    width: 45%;
+    height: 45%;
+    background: hsl(231, 69%, 60%);
+    z-index: -1;
+    border-top-left-radius: 30% 50%;
+    border-bottom-left-radius: 30% 50%;
+}
