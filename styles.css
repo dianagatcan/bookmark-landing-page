@@ -26,9 +26,6 @@ header {
 
 li {
   text-decoration: none;
-}
-
-.nav-links {
   list-style: none;
 }
 
@@ -151,19 +148,6 @@ li {
   border-bottom-left-radius: 30% 50%;
 }
 
-/* .hero-shape{
-    content: "";
-    position: absolute;
-    right: -10rem;
-    bottom: 6rem;
-    width: 45%;
-    height: 5rem;
-    background: hsl(231, 69%, 60%);
-    z-index: -1;
-    border-top-left-radius: 30% 50%;
-    border-bottom-left-radius: 30% 50%;
-} */
-
 /*--------Features------------*/
 .features {
   display: flex;
@@ -173,8 +157,61 @@ li {
   text-align: center;
 }
 
-.features p {
+.features h1 {
+  font-size: 2rem;
+}
+
+.features-description {
   color: hsl(229, 8%, 60%);
   line-height: 1.6;
   width: 40%;
+}
+
+menu,
+ul {
+  padding: 0px;
+}
+
+.selected-feature {
+  border-bottom: 4px solid hsl(0, 94%, 66%);
+}
+
+.features-menu {
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.features-menu li {
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  color: hsl(229, 8%, 60%);
+}
+
+.features-menu li:hover {
+  color: hsl(0, 100%, 0%);
+}
+
+/* hr {
+  width: 100%;
+  height: 0.2rem;
+  margin: 0 0 0 1rem;
+  opacity: 1;
+  border: none;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+} */
+
+.selected:after {
+  content: "";
+  position: absolute;
+  /* fill vertically */
+  top: 0;
+  bottom: 0;
+  width: 9600px;
+  right: 100%;
+  background: red;
 }

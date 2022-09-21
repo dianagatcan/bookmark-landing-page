@@ -21,6 +21,8 @@
         color: hsl(228, 45%, 44%);
       }
     </style>
+
+    <script defer src="script.js"></script>
   </head>
   <body>
     <header>
@@ -61,12 +63,19 @@
       </section>
       <section class="features">
         <h1>Features</h1>
-        <p>
+        <p class="features-description">
           Our aim is to make it quick and easy for you to access your favourite
           websites. Your bookmarks sync between your devices so you can access
           them on the go.
         </p>
-        <menu> Simple Bookmarking Speedy Searching Easy Sharing </menu>
+        <menu>
+          <ul class="features-menu">
+            <li class="features-item selected-feature">Simple Bookmarking</li>
+            <li class="features-item">Speedy Searching</li>
+            <li class="features-item">Easy Sharing</li>
+          </ul>
+          <!-- <hr /> -->
+        </menu>
       </section>
 
       Bookmark in one click Organize your bookmarks however you like. Our simple
