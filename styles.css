@@ -84,7 +84,8 @@ li {
   width: 50%;
 }
 
-.hero-content p {
+.hero-content p,
+.tab p {
   color: hsl(229, 8%, 60%);
   line-height: 1.6;
 }
@@ -94,7 +95,8 @@ li {
   justify-content: flex-start;
 }
 
-.hero-button button {
+.hero-button button,
+.more-info {
   padding: 1rem 1.5rem;
   cursor: pointer;
   font-weight: bold;
@@ -103,7 +105,8 @@ li {
   border: none;
 }
 
-.button-chrome {
+.button-chrome,
+.more-info {
   margin-right: 1rem;
   color: hsl(0, 100%, 100%);
   background-color: hsl(231, 69%, 60%);
@@ -113,7 +116,8 @@ li {
   color: hsl(229, 8%, 60%);
 }
 
-.button-chrome:hover {
+.button-chrome:hover,
+.more-info:hover {
   color: hsl(231, 69%, 60%);
   border: 2px solid hsl(231, 69%, 60%);
 }
@@ -124,7 +128,8 @@ li {
 }
 
 .button-chrome:hover,
-.button-firefox:hover {
+.button-firefox:hover,
+.more-info:hover {
   background-color: hsl(0, 100%, 100%);
   transition: all 0.3s ease 0s;
 }
@@ -140,7 +145,7 @@ li {
   position: absolute;
   top: 10rem;
   right: 0;
-  width: 30rem;
+  width: 35rem;
   height: 18rem;
   z-index: -1;
   background: hsl(231, 69%, 60%);
@@ -151,7 +156,7 @@ li {
 /*--------Features------------*/
 .features {
   display: flex;
-  padding: 3rem 10% 0rem 10%;
+  padding: 3rem 10% 3rem 10%;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -193,25 +198,51 @@ ul {
 }
 
 .features-menu li:hover {
+  color: hsl(0, 94%, 66%);
+}
+
+.features-menu li:visited {
   color: hsl(0, 100%, 0%);
 }
 
-/* hr {
-  width: 100%;
-  height: 0.2rem;
-  margin: 0 0 0 1rem;
-  opacity: 1;
-  border: none;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-} */
+/*--------Features Pages------------*/
+.tab {
+  display: none;
+  padding: 0 10% 7rem 3rem;
+}
 
-.selected:after {
-  content: "";
+.tab-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 35%;
+  padding-left: 8%;
+}
+
+.tab-image {
+  width: 55%;
+  position: relative;
+}
+.tab-image img {
+  width: 75%;
+  padding-left: 25%;
+}
+.tab-shape {
   position: absolute;
-  /* fill vertically */
-  top: 0;
-  bottom: 0;
-  width: 9600px;
-  right: 100%;
-  background: red;
+  top: 5rem;
+  left: 0;
+  width: 40rem;
+  height: 23em;
+  z-index: -1;
+  background: hsl(231, 69%, 60%);
+  border-top-right-radius: 30% 50%;
+  border-bottom-right-radius: 30% 50%;
+}
+
+.more-info {
+  width: fit-content;
+}
+
+.show {
+  display: flex;
 }
