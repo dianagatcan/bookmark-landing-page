@@ -96,17 +96,18 @@ li {
 }
 
 .hero-button button,
-.more-info {
+.more-info,
+.download-btn {
   padding: 1rem 1.5rem;
   cursor: pointer;
   font-weight: bold;
   box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
-  /* border: none; */
 }
 
 .button-chrome,
-.more-info {
+.more-info,
+.download-btn {
   margin-right: 1rem;
   color: hsl(0, 100%, 100%);
   background-color: hsl(231, 69%, 60%);
@@ -119,7 +120,8 @@ li {
 }
 
 .button-chrome:hover,
-.more-info:hover {
+.more-info:hover,
+.download-btn:hover {
   color: hsl(231, 69%, 60%);
   border: 2px solid hsl(231, 69%, 60%);
 }
@@ -131,7 +133,8 @@ li {
 
 .button-chrome:hover,
 .button-firefox:hover,
-.more-info:hover {
+.more-info:hover,
+.download-btn:hover {
   background-color: hsl(0, 100%, 100%);
   transition: all 0.3s ease 0s;
 }
@@ -156,7 +159,8 @@ li {
 }
 
 /*--------Features------------*/
-.features {
+.features,
+.download {
   display: flex;
   padding: 3rem 10% 3rem 10%;
   flex-direction: column;
@@ -247,4 +251,52 @@ ul {
 
 .show {
   display: flex;
+}
+
+/*--------Download------------*/
+.download {
+  margin-top: 3rem;
+}
+.download-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.download-description {
+  color: hsl(229, 8%, 60%);
+  line-height: 1.6;
+  width: 60%;
+}
+
+article {
+  width: 25%;
+  height: 100%;
+  padding: 3rem 1rem 1rem 1rem;
+  box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.download-btn {
+  padding: 1rem 3rem;
+  margin: 1.5rem auto 1rem auto;
+}
+
+article p {
+  color: hsl(229, 8%, 60%);
+  font-weight: normal;
+  margin-bottom: 1.5rem;
+}
+
+.download-cards {
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+article:nth-of-type(2) {
+  margin-top: 3rem;
+}
+
+article:nth-of-type(3) {
+  margin-top: 6rem;
 }
