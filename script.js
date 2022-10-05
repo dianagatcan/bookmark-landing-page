@@ -26,27 +26,22 @@ function select(elem) {
   //add selected class to element
   elem.classList.add(selectedClass);
 }
+
 function display(elem) {
   if (elem.innerHTML === "Speedy Searching") {
-    Array.from(featureSections)
-      .find((featureSection) => featureSection.classList.contains(showSection))
-      .classList.remove(showSection);
-
-    //add selected class to element
+    removeClass(featureSections);
     searchSection.classList.add(showSection);
   } else if (elem.innerHTML === "Simple Bookmarking") {
-    Array.from(featureSections)
-      .find((featureSection) => featureSection.classList.contains(showSection))
-      .classList.remove(showSection);
-
-    //add selected class to element
+    removeClass(featureSections);
     bookmarkSection.classList.add(showSection);
   } else if (elem.innerHTML === "Easy Sharing") {
-    Array.from(featureSections)
-      .find((featureSection) => featureSection.classList.contains(showSection))
-      .classList.remove(showSection);
-
-    //add selected class to element
+    removeClass(featureSections);
     shareSection.classList.add(showSection);
   }
+}
+
+function removeClass(arr) {
+  Array.from(arr)
+    .find((elem) => elem.classList.contains(showSection))
+    .classList.remove(showSection);
 }
