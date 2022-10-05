@@ -14,8 +14,6 @@ Array.from(featureItems).forEach((featureItem) => {
   });
 });
 
-console.log(Array.from(featureItems));
-
 function select(elem) {
   if (elem.classList.contains(selectedClass)) {
     return;
