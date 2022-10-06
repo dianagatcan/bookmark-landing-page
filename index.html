@@ -11,20 +11,10 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <title>Frontend Mentor | Bookmark landing page</title>
-
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
-
     <script defer src="script.js"></script>
   </head>
   <body>
+    <!--------------------------------- Header ----------------------------->
     <header>
       <img class="logo" src="images/logo-bookmark.svg" alt="bookmark logo" />
       <nav>
@@ -43,6 +33,7 @@
       <a href="/login"><button class="login">LOGIN</button></a>
     </header>
     <main>
+      <!------------------------------Hero Section ----------------------------->
       <section class="hero-section">
         <div class="hero-content">
           <h1>A Simple Bookmark Manager</h1>
@@ -61,6 +52,7 @@
           <div class="hero-shape"></div>
         </div>
       </section>
+      <!------------------------------Features Section ----------------------------->
       <section class="features">
         <h1>Features</h1>
         <p class="features-description">
@@ -129,7 +121,8 @@
           <button class="more-info">More Info</button>
         </div>
       </section>
-      <div class="download">
+      <!------------------------------Download Section ----------------------------->
+      <section class="download">
         <header class="download-text">
           <h1>Download the extension</h1>
           <p class="download-description">
@@ -160,29 +153,42 @@
             <button class="download-btn">Add & Install Extension</button>
           </article>
         </section>
-      </div>
-
-      Add to Opera Minimum version 46 Add & Install Extension Frequently Asked
-      Questions Here are some of our FAQs. If you have any other questions you’d
-      like answered please feel free to email us.
-
-      <!-- Question 1 -->
-      What is Bookmark?
-
-      <!-- Answer 1 -->
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
-      justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare
-      mattis.
-
-      <!-- Question 2 -->
-      How can I request a new browser?
-
-      <!-- Answer 2 -->
-      Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
-      ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet
-      convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse
-      imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue
-      massa, ultricies non ligula. Suspendisse imperdiet.
+      </section>
+      <!------------------------------Q&A----------------------------->
+      <section class="qa">
+        <header>
+          <h1>Frequently Asked Questions</h1>
+          <p>
+            Here are some of our FAQs. If you have any other questions you’d
+            like answered please feel free to email us.
+          </p>
+        </header>
+        <ul>
+          <!-- Question 1 -->
+          <li>
+            <h1>What is Bookmark?</h1>
+            <img src="images/icon-arrow.svg" alt="arrow" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+              tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum
+              quis quam ornare mattis.
+            </p>
+          </li>
+          <!-- Question 2 -->
+          <li>
+            <h1>How can I request a new browser?</h1>
+            <img src="images/icon-arrow.svg" alt="arrow" />
+            <p>
+              Vivamus luctus eros aliquet convallis ultricies. Mauris augue
+              massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus
+              eros aliquet convallis ultricies. Mauris augue massa, ultricies
+              non ligula. Suspendisse imperdie tVivamus luctus eros aliquet
+              convallis ultricies. Mauris augue massa, ultricies non ligula.
+              Suspendisse imperdiet.
+            </p>
+          </li>
+        </ul>
+      </section>
 
       <!-- Question 3 -->
       Is there a mobile app?
@@ -212,3 +218,12 @@
     </footer>
   </body>
 </html>
+
+<!-- <svg
+class="faq__image"
+xmlns="http://www.w3.org/2000/svg"
+width="18"
+height="12"
+>
+<path fill="none" stroke-width="3" d="M1 1l8 8 8-8" />
+</svg> -->
