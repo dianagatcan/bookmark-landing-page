@@ -160,7 +160,8 @@ li {
 
 /*--------Features------------*/
 .features,
-.download {
+.download,
+.qa {
   display: flex;
   padding: 3rem 10% 3rem 10%;
   flex-direction: column;
@@ -262,7 +263,8 @@ ul {
   flex-direction: column;
   align-items: center;
 }
-.download-description {
+.download-description,
+.qa header p {
   color: hsl(229, 8%, 60%);
   line-height: 1.6;
   width: 60%;
@@ -278,7 +280,7 @@ article {
 }
 
 .download-btn {
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   margin: 1.5rem auto 1rem auto;
 }
 
@@ -299,4 +301,10 @@ article:nth-of-type(2) {
 
 article:nth-of-type(3) {
   margin-top: 6rem;
+}
+
+/*--------Q&A------------*/
+.qa header {
+  display: flex;
+  flex-direction: column;
 }
