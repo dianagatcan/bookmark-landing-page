@@ -351,3 +351,12 @@ hr {
   width: 100%;
   border-top: hsl(229, 8%, 60%);
 }
+
+.arrow path {
+  stroke: hsl(0, 94%, 66%);
+}
+
+.rotate svg {
+  transform: rotate(-180deg);
+  /* transition: 0.2s ease-out; */
+}

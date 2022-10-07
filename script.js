@@ -45,3 +45,20 @@ function removeClass(arr) {
     .find((elem) => elem.classList.contains(showSection))
     .classList.remove(showSection);
 }
+
+const summaryArray = Array.from(document.getElementsByTagName("summary"));
+const arrowArray = Array.from(document.getElementsByTagName("svg"));
+
+summaryArray.forEach((summary) => {
+  summary.addEventListener("click", () => {
+    rotate(summary);
+  });
+});
+
+const rotate = function (elem) {
+  if (elem.classList.contains("rotate" && "arrow")) {
+    elem.classList.remove("rotate", "arrow");
+  } else {
+    elem.classList.add("rotate", "arrow");
+  }
+};
